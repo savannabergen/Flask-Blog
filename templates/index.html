@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBD-3010</title>
-    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet">
+    <title>Blog</title>
 </head>
 <body>
-   <h1>WEBD-3010</h1>
-   <form action="/weather">
-    <input type="text" name="city" id="city" placeholder="Enter">
-    <button type="submit">Submit</button>
-   </form>
+    <h1>Test</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores temporibus consectetur 
+        quidem similique ullam laudantium aliquam, voluptate harum modi unde, quam quod distinctio.
+        Rerum aperiam minus quidem, laudantium ea molestiae?</p>
+     <p> My name is {{ first_name }}</p>   
+     <p>{{ stuff|striptags }}</p>
+     <h3>Favourite Pizza: </h3>
+     {% for topping in favourite_pizza %}
+        <li>{{ topping }}</li>
+     {% endfor %}   
 </body>
 </html>
